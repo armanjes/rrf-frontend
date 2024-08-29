@@ -1,0 +1,29 @@
+@font-face {
+    font-family: NerkoOne;
+    src: url('../fonts/Nerko_One/NerkoOne-Regular.ttf');
+}
+
+@font-face{
+    font-family: Radditya-Signature;
+    src: url('../fonts/Radditya_Signature_Font/raddityasignature-p7adr.otf');
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    font-family: NerkoOne;
+}
+
+h3 {
+    font-family: Radditya-Signature;
+}
