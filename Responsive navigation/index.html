@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head> 
+  <body>
+    <header>
+      <div class="utility container">
+        <!-- logo-container -->
+        <div class="logo-container">
+          <a href="/">
+            <img src="./nike.png" alt="" />
+          </a>
+        </div>
+        <!-- menu -->
+        <nav>
+          <div class="mobile-show">
+            <i class="ri-menu-5-line"></i>
+          </div>
+          <ul>
+            <li class="mobile-hide">
+              <i class="ri-close-line"></i>
+            </li>
+            <li class="list"><a href="#">New</a></li>
+            <li class="list"><a href="#">Men</a></li>
+            <li class="list"><a href="#">Women</a></li>
+            <li class="list"><a href="#">Kids</a></li>
+            <li class="list"><a href="#">Sale</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      const menus = document.querySelector("nav ul");
+      const showBtn = document.querySelector(".mobile-show");
+      const hideBtn = document.querySelector(".mobile-hide");
+      showBtn.addEventListener("click", function () {
+        menus.classList.add("showMenus");
+      });
+      hideBtn.addEventListener("click", function () {
+        menus.classList.remove("showMenus");
+      });
+    </script>
+  </body>
+</html>
